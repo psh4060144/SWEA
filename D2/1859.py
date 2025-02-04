@@ -1,14 +1,19 @@
-case_total = int(input())
+import sys
+
+case_total = int(sys.stdin.readline())
 
 for repeat in range(case_total):
 
-    day_total = int(input())
-    lst = list(map(int,input().split()))
+    day_total = int(sys.stdin.readline())
+    lst = list(map(int,sys.stdin.readline().split()))
 
     lstsum = 0
+    dic = {a:b for b,a in enumerate(lst)}
+
 
     while lst != []:
         lst_max = lst.index(max(lst))
+
         lst1 = lst[:lst_max + 1]
         lst2 = lst[lst_max + 1:]
 
@@ -17,3 +22,5 @@ for repeat in range(case_total):
         lst = lst2
 
     print(f'#{repeat + 1} {lstsum}')
+
+
