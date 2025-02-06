@@ -33,3 +33,4 @@ for i in range(1, T+1):
         max -= 1    
     
     print(f'#{i} {max-min}')
+    
