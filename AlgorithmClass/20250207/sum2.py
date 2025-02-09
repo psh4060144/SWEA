@@ -1,6 +1,8 @@
+# sum
+
 T = 10  # test case는 10개
 
-for i in range(T):  # 어차피 각 test case의 번호가 들어오므로 굳이 1, T + 1로 안해도 된다.
+for i in range(T):  # 어차피 각 test case의 번호가 들어오므로(N) 굳이 1, T + 1로 안해도 된다.
     
     N = int(input())  # test case의 번호. 이거 그대로 마지막에 출력.
     sum = 0  # 합계의 최댓값을 구하기 위해 인수를 설정.

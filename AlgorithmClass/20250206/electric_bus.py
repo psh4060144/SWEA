@@ -30,8 +30,8 @@ for i in range(1, T + 1):
             break
         else:
             for k in range(K):
-               if count[n + k] == 1:  # 배터리가 있다면
-                   charger = n + k    # 배터리 갯수가 1인 정류장의 index번호를 charger에 할당한다.
+                if count[n + k] == 1:  # 배터리가 있다면
+                    charger = n + k    # 배터리 갯수가 1인 정류장의 index번호를 charger에 할당한다.
             n = charger + 1  # 해당 정류장 바로 다음 정류장부터 다시 시작하기 위해 + 1 한다.
             result += 1  # 결과값에 1을 더한다. 충전을 한 번만 하니까.
             
