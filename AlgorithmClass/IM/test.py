@@ -1,11 +1,5 @@
-a = '011110'
-b = '111'
+field = [[0, 0, 1], [0, 2, 0], [3, 0, 0]]
 
-c = a.split(b)
+field = list(zip(*field))
 
-while '' in c:
-    c.remove('')
-
-d = list(map(int, c))
-
-print(d)
+print(field)
