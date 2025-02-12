@@ -1,5 +1,5 @@
-field = [[0, 0, 1], [0, 2, 0], [3, 0, 0]]
-
-field = list(zip(*field))
-
-print(field)
+print(round(1/2))
+print(round(2/2))
+print(round(3/2))
+print(round(4/2))
+print(round(5/2))
