@@ -13,7 +13,7 @@ for tc in range(1, T + 1):  # test case 만큼 반복
         Ai, Bj = Bj, Ai
 
     for i in range(len(Bj) - len(Ai) + 1):  # 더 짧은 쪽을 움직이며 곱할 거기 때문에 더 긴 쪽을 기준으로 함.
-        mul_sum = 0
+        mul_sum = -0xffffffff
         
         for j in range(len(Ai)):  # 값을 곱해서 더해줌
             mul_sum += Ai[j] * Bj[j + i]
