@@ -26,8 +26,12 @@ for tc in range(1, T + 1):  # test case 만큼 반복
             if arr[i - 1 - jj] == arr[i - 1 + jj]:  # 벗어나지 않는 경우 돌을 뒤집는다.
                 if arr[i - 1 - jj] == 0:
                     arr[i - 1 - jj] = arr[i - 1 + jj] = 1  # 0 이면 1 로 뒤집고
+                    # arr[i - 1 - jj] = (arr[i - 1 - jj] + 1) % 2
+                    # arr[i - 1 + jj] = (arr[i - 1 + jj] + 1) % 2
                 else:
                     arr[i - 1 - jj] = arr[i - 1 + jj] = 0  # 1 이면 0 으로 뒤집는다.
+                    # arr[i - 1 - jj] = (arr[i - 1 - jj] + 1) % 2
+                    # arr[i - 1 + jj] = (arr[i - 1 + jj] + 1) % 2
 
     print(f'#{tc}', end=' ')  # 형식에 맞게 출력
     for k in arr:

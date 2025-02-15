@@ -12,10 +12,8 @@ for tc in range(1, T + 1):  # test case 만큼 반복
     for i in range(N):  # 모든 전등을 지나가면서 비교하는데,
         if Ai[i] != Bj[i]:  # 다른 전등을 만난다면
             for j in range(i, N):  # 그 뒤의 모든 전등의 상태를 변경한다.
-                if Ai[j] == 0:
-                    Ai[j] = 1
-                else:
-                    Ai[j] = 0
+                    Ai[j] = (Ai[j] + 1) % 2  # 자체를 1이나 0으로 바꾸는 것보다 산술연산이 훨씬 빠르다!
+
             count += 1  # 그리고 스위치 누른 횟수에 1을 더한다.
 
     print(f'#{tc} {count}')
