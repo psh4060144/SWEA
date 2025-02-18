@@ -8,8 +8,8 @@ for tc in range(1, T + 1):  # test case 만큼 반복
 
     field = [list(map(int, input().split())) for _ in range(N)]  # 길이만큼 풍선 점수를 받음
 
-    sum_max = 0  # 모든 풍선이 양의 정수의 점수를 가지므로, sum_max 는 0보다 크다.
-    sum_min = 1000  # 각 풍선의 최대 점수가 9점을 넘지 못하고, N 또한 20을 넘지 못하기 때문에 sum_min은 1000보다 작다.
+    sum_max = 0  # 모든 풍선이 양의 정수의 점수를 가지므로, sum_max 는 0보다 크다.  # float('-inf')
+    sum_min = 1000  # 각 풍선의 최대 점수가 9점을 넘지 못하고, N 또한 20을 넘지 못하기 때문에 sum_min은 1000보다 작다.  float('inf')
 
     for i in range(N):
         for j in range(N):  # 하나의 풍선을 기준으로 잡아
