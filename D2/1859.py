@@ -1,12 +1,8 @@
-import sys
+T = int(input())
+for tc in range(1, T + 1):
 
-case_total = int(sys.stdin.readline())
-
-for repeat in range(case_total):
-
-    day_total = int(sys.stdin.readline())
-    lst = list(map(int,sys.stdin.readline().split()))
-
+    day_total = int(input())
+    lst = list(map(int, input().split()))
     lstsum = 0
     dic = {a:b for b,a in enumerate(lst)}
 
@@ -21,6 +17,4 @@ for repeat in range(case_total):
         lstsum += lst1_max * len(lst1) - sum(lst1)
         lst = lst2
 
-    print(f'#{repeat + 1} {lstsum}')
-
-
+    print(f'#{tc} {lstsum}')

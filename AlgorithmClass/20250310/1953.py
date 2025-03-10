@@ -27,7 +27,7 @@ def solve(R, C, L):  # 파이프를 순회하며 이동할 수 있는 칸을 세
         for i in range(4):  # 현재 위치의 상, 우, 하, 좌의 파이프를 돌아가면서 확인하는데
             r = current[0] + pipe[key][i][0]
             c = current[1] + pipe[key][i][1]  # 각 위치를 새로 좌표화.
-            if 0 <= r < N and 0 <= c < M and not visited[r][c] and field[r][c] in pipe[9][i] :  # 범위 안이고, 방문한 적 없으며, 유효한 파이프라면
+            if 0 <= r < N and 0 <= c < M and not visited[r][c] and field[r][c] in pipe[9][i]:  # 범위 안이고, 방문한 적 없으며, 유효한 파이프라면
                 queue.append((r, c, current[2] + 1))  # 이동 거리에 1을 추가한 해당 위치를 queue 에 저장.
                 visited[r][c] = 1  # 해당 위치에 방문 표시.
                 count += 1  # 이동할 수 있는 칸을 추가.
