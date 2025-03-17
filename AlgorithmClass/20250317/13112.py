@@ -5,7 +5,7 @@ def merge(start, end):
     j = mid + 1
     tmp_arr = []
 
-    if arr[mid - 1] > arr[end]:  # 왼쪽 마지막 원소가 오른쪽 마지막 원소보다 큰 경우 count 에 1 추가.
+    if arr[mid] > arr[end]:  # 왼쪽 마지막 원소가 오른쪽 마지막 원소보다 큰 경우 count 에 1 추가.
         count += 1
 
     while i <= mid and j <= end:  # 왼쪽과 오른쪽을 처음부터 비교해서 작은 값 붙이기.
