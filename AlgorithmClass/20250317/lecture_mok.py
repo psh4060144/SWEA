@@ -86,10 +86,11 @@ def merge_sort(start, end):
     merge_sort(start, mid)
     merge_sort(mid + 1, end)
     merge(start, end)
+########################################################################
 
 
 arr = [1, 6, 2, 5, 4, 3]
 N = len(arr)
 merge_sort(0, N - 1)
 print(arr)
-########################################################################
+
