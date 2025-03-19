@@ -5,7 +5,7 @@ def battery(idx, cnt):  # 최소 교환 횟수를 찾는 함수.
     global cnt_min  # 최소 교환 횟수를 찾기 위해 전역 변수를 설정.
 
     if cnt_min <= cnt:  # 현재 교환 횟수가 이미 최소 교환 횟수보다 크거나 같다면 가망이 없으므로 종료.
-        return  # prunning.
+        return  # pruning.
 
     if idx >= N:  # 종점에 도착했다면
         if cnt_min > cnt:  # 최소 교환 횟수와 현재 교환 횟수를 비교하여

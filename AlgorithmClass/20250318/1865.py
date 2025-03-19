@@ -6,7 +6,7 @@ def solve(i, multiply):  # 최대 성공 확률을 구하는 함수.
     global result  # 최대 확률을 구하기 위해 전역 변수를 사용.
 
     if result >= multiply:  # 현재 확률이 최대 확률보다 작다면 해당 route 의 최대 확률은 반드시 최대 확률보다 작다.
-        return  # prunning.
+        return  # pruning.
 
     if i == N:  # 모든 행을 봤다면
         if result < multiply:  # 현재 확률과 최대 확률을 비교하여

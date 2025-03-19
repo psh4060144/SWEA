@@ -1,3 +1,5 @@
+# 이진 탐색
+
 def binary_search(start, end, key, direction):
     # 시작 index, 끝 index, 찾는 값, 진행 방향. 1 = 오른쪽, 2 = 왼쪽, 0 = 시작으로 표시.
     if start > end:  # 범위가 역전되거나, 비교 가능한 요소가 없다.

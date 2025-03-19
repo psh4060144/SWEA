@@ -5,7 +5,7 @@ def solve(i, sum):  # 최솟값을 구하는 함수.
     global sum_min  # 최솟값을 구하기 위해 전역 변수를 설정.
     global col  # 확인한 행을 표시하기 위해 전역 변수를 설정.
 
-    if sum_min < sum:  # prunning. sum 값이 이미 sum_min 보다 크다면 답이 될 수 없으므로 조기 종료.
+    if sum_min < sum:  # pruning. sum 값이 이미 sum_min 보다 크다면 답이 될 수 없으므로 조기 종료.
         return
 
     if i > N - 1:  # 모든 행을 봤다면
